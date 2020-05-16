@@ -1,0 +1,106 @@
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  background-color: black;
+  color: white;
+}
+
+main {
+  padding: 20px;
+  flex: 1;
+}
+
+ul{
+  padding: 0;
+}
+
+.add-todo {
+  display: flex;
+  align-items: center;
+  width: 400px;
+}
+
+.button-add {
+  font-size: 20px;
+  height: 30px;
+  border: 1px solid rgb(27,86,197);
+  color: white;
+  background-color: rgb(27,86,197);
+  box-sizing: border-box;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.input-add {
+  height: 26px;
+  font-size: 18px;
+  border: 1px solid #CCC;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  flex: 1;
+}
+
+.input-checkbox {
+  transform: scale(1.5);
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.todo-item {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  width: 400px;
+}
+
+.task {
+  margin-right: 10px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.task.done {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.priority {
+  text-align: right;
+  min-width: 15px;
+}
+
+.priority.low {
+  color: gray
+}
+
+.priority.medium {
+  color: orange;
+}
+
+.priority.high {
+  color: red;
+}
+
+.delete-btn {
+  margin-left: 10px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  color: red;
+  font-size: 22px;
+}
+
+footer {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  background-color: gray;
+}
