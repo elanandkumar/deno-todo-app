@@ -73,7 +73,6 @@ const TodoApp = () => {
 
       const updatedTodos = todoAppContext.todos.map(todo => {
         if(todo.id === todoId) {
-          console.log("matched...");
           return {
             ...todo,
             isDone

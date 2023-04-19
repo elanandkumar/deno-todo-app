@@ -1,5 +1,4 @@
 import { Router } from "./deps.ts";
-import { send, Context } from "./deps.ts";
 import getTodos from "./handlers/getTodos.ts";
 import getTodo from "./handlers/getTodo.ts";
 import addTodo from "./handlers/addTodo.ts";

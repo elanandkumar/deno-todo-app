@@ -18,7 +18,7 @@ export const addTodo = async (todoData: TodoData): Promise<string> => {
   const todos = await fetchData();
 
   const newTodo: Todo = {
-    id: createId(),
+    id: await createId(),
     task: String(todoData.task),
     priority: todoData.priority !== undefined
       ? String(todoData.priority).toLowerCase()

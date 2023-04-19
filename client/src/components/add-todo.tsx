@@ -20,7 +20,6 @@ const AddTodo: React.FC = () => {
   }
 
   const handlePriorityChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(e.target.value);
     setPriority(e.target.value);
   }
 

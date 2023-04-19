@@ -13,9 +13,10 @@ export default async ({
     return;
   }
 
-  const { type, value } = await request.body();
+  const { type, value } = request.body();
 
-  let todoData = value;
+  let todoData = await value;
+
   if (type === "text") {
     todoData = JSON.parse(value);
   }
